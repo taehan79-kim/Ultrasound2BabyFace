@@ -1,0 +1,10 @@
+# Environment
+env
+.env
+
+*.pem
+
+# Cache files
+*.pyc
+*.exe
+*.log
