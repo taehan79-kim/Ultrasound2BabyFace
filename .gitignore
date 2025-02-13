@@ -8,3 +8,10 @@ env
 *.pyc
 *.exe
 *.log
+
+flagged/
+*.png
+*.jpg
+*.mp4
+*.csv
+*.webp
