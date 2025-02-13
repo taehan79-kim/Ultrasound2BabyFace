@@ -10,7 +10,7 @@ def process_inputs(image, text1, text2, seed1, seed2):
     image_bytes = buffered.getvalue()
 
     # 서버로 보낼 데이터 설정
-    url = "http://localhost:8000/generate-image"  # POST 요청을 보낼 URL
+    url = os.getenv('GENERATE_URL')  # POST 요청을 보낼 URL
     files = {"file": ("image.png", image_bytes, "image/png")}
     data = {"prompt": text1, "neg_prompt": text2, "seed": seed1, "strength": seed2}
     
